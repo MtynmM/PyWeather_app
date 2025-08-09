@@ -17,7 +17,7 @@ class MainView(ttk.Window):
         self.city_entry = ttk.Entry(search_frame, font=("Arial", 12))
         self.city_entry.pack(side="left", fill="x", expand=True, padx=(0, 5))
 
-        self.search_button = ttk.Button(search_frame, text="جستجوی شهر مورد نظر")
+        self.search_button = ttk.Button(search_frame, text="جستجو..")
         self.search_button.pack(side="right")
 
         result_frame = ttk.Frame(self)
