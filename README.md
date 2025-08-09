@@ -106,4 +106,4 @@ This application uses weather data provided by WeatherAPI.com.
 
 </details>
 
-Developed by [Your Name Here]
+Developed by [Matin Mohammadi]
