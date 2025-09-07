@@ -1,3 +1,4 @@
+from PIL import ImageTk, Image
 import ttkbootstrap as ttk
 
 
@@ -25,6 +26,9 @@ class MainView(ttk.Window):
 
         self.location_label = ttk.Label(result_frame, font=("Arial", 20))
         self.location_label.pack(pady=13)
+
+        self.icon_label = ttk.Label(result_frame)
+        self.icon_label.pack(pady=5)
 
         self.temp_label = ttk.Label(result_frame, font=("Arial", 50, "bold"))
         self.temp_label.pack(pady=10)
