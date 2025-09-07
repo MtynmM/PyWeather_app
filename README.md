@@ -13,6 +13,8 @@ Real-time Weather Data: Fetches and displays current weather conditions for any 
 
 Modern GUI: Built with ttkbootstrap for a beautiful, themeable user interface (defaulting to "superhero" dark theme).
 
+Dynamic weather icons based on the current condition.
+
 Clean Architecture: Strictly follows the MVC (Model-View-Controller) pattern to ensure separation of concerns and maintainability.
 
 Secure API Key Management: Utilizes environment variables (.env file) to securely manage the API key, keeping it out of version control.
@@ -23,6 +25,8 @@ Robust Error Handling: Gracefully handles invalid user inputs (e.g., unknown cit
 <summary><b>(ویژگی‌ها به فارسی)</b></summary>
 
 داده‌های لحظه‌ای آب و هوا: دریافت و نمایش شرایط آب و هوایی لحظه‌ای برای هر مکان مشخص شده.
+
+نمایش آیکون‌های پویای آب و هوا بر اساس وضعیت فعلی
 
 رابط کاربری گرافیکی مدرن: ساخته شده با ttkbootstrap برای یک رابط کاربری زیبا و قابل تم‌بندی (با تم پیش‌فرض "superhero").
 
@@ -60,50 +64,59 @@ Version Control: Git
 
 </details>
 
-🚀 Getting Started
-To run this project locally, follow these steps:
+
+    ## 🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
 
 <details>
-<summary><b>(راهنمای اجرا به فارسی)</b></summary>
+<summary><b>(راهنمای راه اندازی به فارسی)</b></summary>
 
-برای اجرای این پروژه به صورت محلی، مراحل زیر را دنبال کنید:
+برای راه اندازی و اجرای یک نسخه محلی از پروژه، این مراحل ساده را دنبال کنید.
 
 </details>
-
-Clone the repository:
-
-git clone https://github.com/[your-username]/PyWeather_app.git
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/MtynmM/PyWeather_app.git](https://github.com/MtynmM/PyWeather_app.git)
 cd PyWeather_app
-
-Set up the virtual environment:
-
-python -m venv venv
+### 2. Set up The Virtual Environment
+```bash
 # On Windows
+python -m venv venv
 .\venv\Scripts\activate
+
 # On macOS/Linux
+python3 -m venv venv
 source venv/bin/activate
-
-Install dependencies:
-
+### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+### 4. Create The `.env` File & Add API Key (Crucial Step!)
+This application requires a free API key from **WeatherAPI.com** to function.
 
-Create the .env file:
-Create a file named .env in the project root and add your API key:
-
-WEATHER_API_KEY="your_api_key_from_weatherapi.com"
-
-Run the application:
-
-python -m app.main
-
-acknowledgements
-This application uses weather data provided by WeatherAPI.com.
+1.  Go to [www.weatherapi.com](https://www.weatherapi.com) and sign up for a free account.
+2.  After signing up, find your **API Key** on your account dashboard and copy it.
+3.  In the root directory of the project, create a new file named `.env`.
+4.  Open the `.env` file and add the following line, replacing `"YOUR_API_KEY_HERE"` with the key you copied:
+    ```env
+    WEATHER_API_KEY="YOUR_API_KEY_HERE"
+    ```
 
 <details>
-<summary><b>(قدردانی به فارسی)</b></summary>
+<summary><b>(ترجمه فارسی: ساخت فایل .env و افزودن کلید API)</b></summary>
 
-این برنامه از داده‌های آب و هوا که توسط WeatherAPI.com ارائه شده، استفاده می‌کند.
+این برنامه برای کار کردن، به یک کلید API رایگان از **WeatherAPI.com** نیاز دارد.
+
+1.  به وب‌سایت [www.weatherapi.com](https://www.weatherapi.com) بروید و یک حساب کاربری رایگان بسازید.
+2.  پس از ثبت‌نام، **کلید API** خود را در داشبورد حساب کاربری پیدا کرده و آن را کپی کنید.
+3.  در پوشه اصلی پروژه، یک فایل جدید به نام `.env` بسازید.
+4.  فایل `.env` را باز کرده و خط زیر را در آن اضافه کنید. به جای `"YOUR_API_KEY_HERE"`، کلیدی که کپی کرده‌اید را قرار دهید:
+    ```env
+    WEATHER_API_KEY="YOUR_API_KEY_HERE"
+    ```
 
 </details>
+### 5. Run the Application
+```bash
+python -m app.main
 
 Developed by [Matin Mohammadi]
